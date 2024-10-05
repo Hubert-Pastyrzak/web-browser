@@ -12,7 +12,7 @@ LRESULT CALLBACK UI_Backend_Windows::WndProc(HWND hWnd, UINT uMsg, WPARAM wParam
 
 			RECT rect = {};
 			rect.right = window->minClientAreaSize.width;
-			rect.bottom = 40;
+			rect.bottom = window->minClientAreaSize.height;
 
 			AdjustWindowRect(&rect, WS_OVERLAPPEDWINDOW, false);
 
